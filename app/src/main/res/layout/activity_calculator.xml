@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName|number" />
+
+    <EditText
+
+        android:id="@+id/number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/number1"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="textPersonName|number" />
+
+    <Button
+        android:id="@+id/buttonTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/number1"
+        android:layout_margin="10dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/buttonKurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonTambah"
+        android:layout_alignRight="@+id/buttonTambah"
+        android:layout_alignTop="@+id/number2"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/buttonKali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonKurang"
+        android:layout_alignRight="@+id/buttonKurang"
+        android:layout_below="@+id/buttonKurang"
+        android:layout_marginTop="27dp"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/buttonBagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonKali"
+        android:layout_alignStart="@+id/buttonKali"
+        android:layout_centerVertical="true"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/viewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonBagi"
+        android:layout_alignEnd="@+id/number2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/number2"
+        android:layout_alignTop="@+id/buttonKali"
+        android:layout_marginTop="11dp"
+        android:text="Input angka dan pilih operator" />
+
+
+</RelativeLayout>
+
